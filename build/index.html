@@ -377,6 +377,47 @@
 
     </div>
   </footer>
+
+  <section class="modal-login">
+    <div class="modal-login__wrapper">
+      <div class="modal-login__inner">
+        <h2>Create Account</h2>
+        <button class="modal-login__close" type="button" aria-label="Close login window">
+          <svg class="modal-login__icon" width="22" height="22" role="img">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-login__input-inner">
+          <label for="user-name"></label>
+          <input id="user-name" type="text" name="name" placeholder="First Name" required="">
+        </div>
+        <div class="modal-login__input-inner">
+          <label for="user-name"></label>
+          <input id="user-surname" type="text" name="surname" placeholder="Last Name" required="">
+        </div>
+        <div class="modal-login__input-inner">
+          <label for="user-email"></label>
+          <input id="user-email" type="email" name="login" placeholder="Email" required="">
+        </div>
+        <div class="modal-login__input-inner">
+          <label for="user-password"></label>
+          <input id="user-password" type="password" name="password" placeholder="Password" required="">
+        </div>
+        <div class="modal-login__checkbox-inner">
+          <input class="modal-login__checkbox visually-hidden" id="checkbox" type="checkbox" name="checkbox" checked="">
+          <label class="modal-login__checkbox-label" for="checkbox"></label>
+          <p class="modal-login__subscribe">Let's get personal! We'll send you only the good stuff: Exclusive early access to Sale, new arrivals and
+            promotions. No nasties.</p>
+        </div>
+      </form>
+      <p class="modal-login__rules">By signing up you agree to <a class="modal-login__link" href="#">Terms of Service</a> and <a class="modal-login__link" href="#">Privacy Policy</a></p>
+      <button class="modal-login__signup" type="submit">Sign Up</button>
+      <a class="modal-login__signup-link" href="#">I have an account</a>
+    </div>
+  </section>
+
 </body>
 
 </html>

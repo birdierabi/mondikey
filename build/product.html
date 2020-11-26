@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mondikey - buy better, keep forever">
+  <title>Mondikey shop</title>
+  <link rel="preload" href="fonts/syncopate-v12-latin-700.woff2" as="font">
+  <link rel="preload" href="fonts/syncopate-v12-latin-regular.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__nav-wrapper">
+        <nav class="page-header__nav">
+          <button class="page-header__toggle" type="button" aria-label="Menu button">
+            <svg class="page-header__icon page-header__icon--menu" width="40" height="28" role="img">
+              <use xlink:href="img/sprite.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+          <div class="page-header__mobile-menu">
+            <ul class="page-header__list page-header__list--main-nav main-nav">
+              <li class="page-header__item main-nav__item">
+                <a class="page-header__link main-nav__link" href="#">New Arrivals</a>
+              </li>
+              <li class="page-header__item main-nav__item">
+                <a class="page-header__link main-nav__link" href="#">Shop</a>
+              </li>
+              <li class="page-header__item main-nav__item">
+                <a class="page-header__link main-nav__link" href="#">Collections</a>
+              </li>
+            </ul>
+            <ul class="page-header__list page-header__list--subnav subnav">
+              <li class="page-header__item subnav__item">
+                <a class="page-header__link subnav__link" href="#">Customer Service</a>
+              </li>
+              <li class="page-header__item subnav__item">
+                <a class="page-header__link subnav__link" href="#">Sign In</a>
+              </li>
+            </ul>
+            <button class="page-header__button page-header__button--close-menu" type="button">
+              <svg class="page-header__icon page-header__icon--close" width="20" height="20" role="img">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <a class="page-header__logo" href="index.html" aria-label="Mondikey shop logo image">
+          <svg class="page-header__icon page-header__icon--logo" width="305" height="30" role="img">
+            <use xlink:href="img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <ul class="page-header__list page-header__list--user-nav">
+          <li class="page-header__item">
+            <button class="page-header__button" type="button">
+              <svg class="page-header__icon page-header__icon--search" width="16" height="16" role="img">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+              <span class="page-header__search-text">Search</span>
+            </button>
+          </li>
+          <li class="page-header__item page-header__item--login">
+            <button class="page-header__button" type="button">Sing In</button>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="#">
+              <span class="page-header__bag">Bag (<span class="page-header__quantity-counter">2</span>)</span>
+              <svg class="page-header__icon page-header__icon--cart" width="28" height="32" role="img">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="#">
+              <svg class="page-header__icon page-header__icon--heart" width="24" height="20" role="img">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <form class="page-header__form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="input-search" aria-label="Search button">
+          <input id="input-search" type="search" name="search" placeholder="Type here to search">
+        </label>
+        <button class="page-header__button page-header__button--close-form" type="button">
+          <svg class="page-header__icon page-header__icon--close" width="20" height="20" role="img">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="visually-hidden">Online shop Mondikey</h1>
+
+    <section class="product-card">
+      <h2 class="visually-hidden">Product Card</h2>
+      <div class="product-card__wrapper">
+        <div class="product-card__image-wrapper">
+          <picture>
+            <!-- <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/product-card-t-shirt-peace-big-mobile@1x.webp, img/product-card-t-shirt-peace-big-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/product-card-t-shirt-peace-big-tablet@1x.webp, img/product-card-t-shirt-peace-big-tablet@2x.webp 2x"> -->
+            <source type="image/webp" srcset="img/product-card-t-shirt-peace-big-desktop@1x.webp, img/product-card-t-shirt-peace-big-desktop@2x.webp 2x">
+
+            <!-- 1x: 540px 2x: 1080px -->
+            <img class="product-card__image" src="img/product-card-t-shirt-peace-big-desktop@1x.jpg" srcset="img/product-card-t-shirt-peace-big-desktop@2x.jpg 2x" width="540" height="813" alt="T-shirt peace big view">
+          </picture>
+          <picture>
+            <!-- <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/product-card-t-shirt-peace-mobile@1x.webp, img/product-card-t-shirt-peace-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/product-card-t-shirt-peace-tablet@1x.webp, img/product-card-t-shirt-peace-tablet@2x.webp 2x"> -->
+            <source type="image/webp" srcset="img/product-card-t-shirt-peace-desktop@1x.webp, img/product-card-t-shirt-peace-desktop@2x.webp 2x">
+
+            <!-- 1x: 540px 2x: 1080px -->
+            <img class="product-card__image" src="img/product-card-t-shirt-peace-desktop@1x.jpg" srcset="img/product-card-t-shirt-peace-desktop@2x.jpg 2x" width="540" height="813" alt="T-shirt peace">
+          </picture>
+        </div>
+        <div class="product-card__description-wrapper">
+          <h3>Peace saints boyfriend T-Shirt</h3>
+          <div class="product-card__description-inner">
+            <span class="product-card__price">USD $79.00</span>
+            <div class="product-card__color-wrapper">
+              <span class="product-card__color">Color</span>
+              <div class="product-card__color-item"></div>
+            </div>
+            <div class="product-card__size-wrapper">
+              <span class="product-card__size">Size</span>
+              <ul class="product-card__size-list">
+                <li class="product-card__size-item">XS</li>
+                <li class="product-card__size-item">S</li>
+                <li class="product-card__size-item">M</li>
+                <li class="product-card__size-item">L</li>
+                <li class="product-card__size-item">XL</li>
+              </ul>
+            </div>
+            <div class="product-card__button-wrapper">
+              <button class="product-card__cart-button" type="button">Add To Bag</button>
+              <button class="product-card__wishlist-button" type="button">
+                <svg class="product-card__icon product-card__icon--heart" width="28" height="24" role="img">
+                  <use xlink:href="img/sprite.svg#icon-heart"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="product-card__description-list">
+              <li class="product-card__description-item">
+                <button class="product-card__description-button">Product Description</button>
+                <p>Peace saints is a relaxed boyfriend T-Shirt.</p>
+              </li>
+              <li class="product-card__description-item">
+                <button class="product-card__description-button">Shipping & Returns</button>
+                <p></p>
+              </li>
+              <li class="product-card__description-item">
+                <button class="product-card__description-button">Fabric Composition</button>
+                <p>100% Cotton</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="additional-product">
+      <div class="additional-product__wrapper">
+        <h2>Complete The Look</h2>
+        <div class="additional-product__image-wrapper">
+          <picture>
+            <!-- <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/product-card-t-shirt-peace-big-mobile@1x.webp, img/product-card-t-shirt-peace-big-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/product-card-t-shirt-peace-big-tablet@1x.webp, img/product-card-t-shirt-peace-big-tablet@2x.webp 2x"> -->
+            <source type="image/webp" srcset="img/product-card-t-shirt-peace-big-desktop@1x.webp, img/product-card-t-shirt-peace-big-desktop@2x.webp 2x">
+
+            <!-- 1x: 540px 2x: 1080px -->
+            <img class="additional-product__image" src="img/product-card-t-shirt-peace-big-desktop@1x.jpg" srcset="img/product-card-t-shirt-peace-big-desktop@2x.jpg 2x" width="540" height="813" alt="T-shirt peace big view">
+          </picture>
+          <picture>
+            <!-- <source type="image/webp" media="(max-width: 767px)"
+              srcset="img/product-card-t-shirt-peace-mobile@1x.webp, img/product-card-t-shirt-peace-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)"
+              srcset="img/product-card-t-shirt-peace-tablet@1x.webp, img/product-card-t-shirt-peace-tablet@2x.webp 2x"> -->
+            <source type="image/webp" srcset="img/product-card-t-shirt-peace-desktop@1x.webp, img/product-card-t-shirt-peace-desktop@2x.webp 2x">
+
+            <!-- 1x: 540px 2x: 1080px -->
+            <img class="additional-product__image" src="img/product-card-t-shirt-peace-desktop@1x.jpg" srcset="img/product-card-t-shirt-peace-desktop@2x.jpg 2x" width="540" height="813" alt="T-shirt peace">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo container">
+      <div class="promo__wrapper">
+        <h2>You May Also Like</h2>
+        <ul class="promo__list">
+          <li class="promo__item">
+            <a class="promo__link" href="#">
+              <picture>
+                <!-- <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/promo-black-dress-mobile@1x.webp, img/promo-black-dress-mobile@2x.webp 2x"> -->
+                <source type="image/webp" srcset="img/promo-black-dress-desktop@1x.webp, img/promo-black-dress-desktop@2x.webp 2x">
+
+                <!-- 1x: 313px 2x: 626px -->
+                <img class="promo__image" src="img/promo-black-dress-desktop@1x.jpg" srcset="img/promo-black-dress-desktop@2x.jpg 2x" width="313" height="470" alt="Black dress">
+              </picture>
+            </a>
+          </li>
+          <li class="promo__item">
+            <a class="promo__link" href="#">
+              <picture>
+                <!-- <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/promo-cozy-pants-mobile@1x.webp, img/promo-cozy-pants-mobile@2x.webp 2x"> -->
+                <source type="image/webp" srcset="img/promo-cozy-pants-desktop@1x.webp, img/promo-cozy-pants-desktop@2x.webp 2x">
+
+                <!-- 1x: 313px 2x: 626px -->
+                <img class="promo__image" src="img/promo-cozy-pants-desktop@1x.jpg" srcset="img/promo-cozy-pants-desktop@2x.jpg 2x" width="313" height="470" alt="Cozy pants">
+              </picture>
+            </a>
+          </li>
+          <li class="promo__item">
+            <a class="promo__link" href="#">
+              <picture>
+                <!-- <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/promo-khaki-shorts-mobile@1x.webp, img/promo-khaki-shorts-mobile@2x.webp 2x"> -->
+                <source type="image/webp" srcset="img/promo-khaki-shorts-desktop@1x.webp, img/promo-khaki-shorts-desktop@2x.webp 2x">
+
+                <!-- 1x: 313px 2x: 626px -->
+                <img class="promo__image" src="img/promo-khaki-shorts-desktop@1x.jpg" srcset="img/promo-khaki-shorts-desktop@2x.jpg 2x" width="313" height="470" alt="Khaki shorts">
+              </picture>
+            </a>
+          </li>
+          <li class="promo__item">
+            <a class="promo__link" href="#">
+              <picture>
+                <!-- <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/promo-beige-shorts-mobile@1x.webp, img/promo-beige-shorts-mobile@2x.webp 2x"> -->
+                <source type="image/webp" srcset="img/promo-beige-shorts-desktop@1x.webp, img/promo-beige-shorts-desktop@2x.webp 2x">
+
+                <!-- 1x: 313px 2x: 626px -->
+                <img class="promo__image" src="img/promo-beige-shorts-desktop@1x.jpg" srcset="img/promo-beige-shorts-desktop@2x.jpg 2x" width="313" height="470" alt="Beige shorts">
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper container">
+
+      <div class="page-footer__subscribe subscribe">
+        <h2>Sign Up for updates</h2>
+        <p>Sign up for exclusive early sale access and tailored new arrivals.</p>
+        <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="input-subscribe">E-mail form</label>
+          <div class="subscribe__inner">
+            <input id="input-subscribe" type="email" name="subscribe-newsletter" placeholder="Your email address">
+            <button type="submit" aria-label="Open sign up window">Join</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="page-footer__nav">
+        <div class="page-footer__inner page-footer__inner--custom">
+          <h3>Custom Service</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Contact</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Delivery & Returns</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Payment</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Make a return</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__inner page-footer__inner--info">
+          <h3>Info</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Gift Vouchers</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Size Guide</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Careers at Mondikey</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">About Us</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Legal Policies</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__inner">
+          <h3>Follow Us</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#" aria-label="Redirect to a Facebook page">
+                <div class="page-footer__icon-wrapper">
+                  <svg class="page-footer__icon page-footer__icon--fb" width="18" height="18" role="img">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                  <span class="page-footer__social-text">Facebook</span>
+                </div>
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#" aria-label="Redirect to a Instagram page">
+                <div class="page-footer__icon-wrapper">
+                  <svg class="page-footer__icon page-footer__icon--instagram" width="18" height="18" role="img">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                  <span class="page-footer__social-text">Instagram</span>
+                </div>
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#" aria-label="Redirect to a Pinterest page">
+                <div class="page-footer__icon-wrapper">
+                  <svg class="page-footer__icon page-footer__icon--pinterest" width="18" height="18" role="img">
+                    <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                  </svg>
+                  <span class="page-footer__social-text">Pinterest</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__inner page-footer__inner--contact">
+          <h3>Contact Us</h3>
+          <a class="page-footer__link page-footer__link--email" href="mailto:hello@mondikey.com">hello@mondikey.com</a>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mondikey - buy better, keep forever">
+  <title>Mondikey shop</title>
+  <link rel="preload" href="fonts/syncopate-v12-latin-700.woff2" as="font">
+  <link rel="preload" href="fonts/syncopate-v12-latin-regular.woff2" as="font">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__nav-wrapper">
+        <nav class="page-header__nav">
+          <button class="page-header__toggle" type="button" aria-label="Menu button">
+            <svg class="page-header__icon page-header__icon--menu" width="40" height="28" role="img">
+              <use xlink:href="img/sprite.svg#icon-mobile-menu"></use>
+            </svg>
+          </button>
+          <div class="page-header__mobile-menu">
+            <ul class="page-header__list page-header__list--main-nav main-nav">
+              <li class="page-header__item main-nav__item">
+                <a class="page-header__link main-nav__link" href="#">New Arrivals</a>
+              </li>
+              <li class="page-header__item main-nav__item">
+                <a class="page-header__link main-nav__link" href="#">Shop</a>
+              </li>
+              <li class="page-header__item main-nav__item">
+                <a class="page-header__link main-nav__link" href="#">Collections</a>
+              </li>
+            </ul>
+            <ul class="page-header__list page-header__list--subnav subnav">
+              <li class="page-header__item subnav__item">
+                <a class="page-header__link subnav__link" href="#">Customer Service</a>
+              </li>
+              <li class="page-header__item subnav__item">
+                <a class="page-header__link subnav__link" href="#">Sign In</a>
+              </li>
+            </ul>
+            <button class="page-header__button page-header__button--close-menu" type="button">
+              <svg class="page-header__icon page-header__icon--close" width="20" height="20" role="img">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <a class="page-header__logo" href="index.html" aria-label="Mondikey shop logo image">
+          <svg class="page-header__icon page-header__icon--logo" width="305" height="30" role="img">
+            <use xlink:href="img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <ul class="page-header__list page-header__list--user-nav">
+          <li class="page-header__item">
+            <button class="page-header__button" type="button">
+              <svg class="page-header__icon page-header__icon--search" width="16" height="16" role="img">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+              <span class="page-header__search-text">Search</span>
+            </button>
+          </li>
+          <li class="page-header__item page-header__item--login">
+            <button class="page-header__button" type="button">Sing In</button>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="#">
+              <span class="page-header__bag">Bag (<span class="page-header__quantity-counter">2</span>)</span>
+              <svg class="page-header__icon page-header__icon--cart" width="28" height="32" role="img">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="#">
+              <svg class="page-header__icon page-header__icon--heart" width="24" height="20" role="img">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <form class="page-header__form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="input-search" aria-label="Search button">
+          <input id="input-search" type="search" name="search" placeholder="Type here to search">
+        </label>
+        <button class="page-header__button page-header__button--close-form" type="button">
+          <svg class="page-header__icon page-header__icon--close" width="20" height="20" role="img">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <main class="page-main page-main--catalog">
+    <h1 class="visually-hidden">Online shop Mondikey</h1>
+
+    <section class="filter">
+      <h2 class="visually-hidden">Filter</h2>
+      <button class="filter__button" type="button">Refine Items</button>
+      <div class="filter__wrapper">
+        <div class="filter__inner categories">
+          <h3>Categories</h3>
+          <ul class="categories__list">
+            <li class="categories__item">
+              <a class="categories__link">Tops</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link">Tees and Tank</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link">Shirts</a></li>
+            <li class="categories__item">
+              <a class="categories__link">Dresses</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link">Jackets</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link">Knitwear</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link">Jumpsuits</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link">Bottoms</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link">Intimates</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link">Shorts</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link">Jeans</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link">Skirts</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link">Sale</a>
+            </li>
+            <li class="categories__item">
+              <a class="categories__link">Shop All</a>
+            </li>
+          </ul>
+        </div>
+        <div class="filter__inner">
+          <h3>Filters</h3>
+          <legend>Size</legend>
+          <legend>Price</legend>
+          <legend>Color</legend>
+          <legend>Fabric</legend>
+          <legend>Sort:<span>Newest</span></legend>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <div class="catalog__item-inner">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-white-sundress-mobile@1x.webp, img/catalog-white-sundress-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog-white-sundress-desktop@1x.webp, img/catalog-white-sundress-desktop@2x.webp 2x">
+
+                <!-- 1x: 451px 2x: 902px -->
+                <img src="img/catalog-white-sundress-desktop@1x.jpg" srcset="img/catalog-white-sundress-desktop@2x.jpg 2x" width="384" height="574" alt="White sundress">
+              </picture>
+              <svg class="catalog__icon catalog__icon--heart" width="37" height="32" role="img">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+            <div class="catalog__description">
+              <h3>Organic cotton and hemp dress</h3>
+              <span class="catalog__item-price">USD $159.00</span>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__item-inner">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-flower-print-skirt-mobile@1x.webp, img/catalog-flower-print-skirt-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog-flower-print-skirt-desktop@1x.webp, img/catalog-flower-print-skirt-desktop@2x.webp 2x">
+
+                <!-- 1x: 451px 2x: 902px -->
+                <img src="img/catalog-flower-print-skirt-desktop@1x.jpg" srcset="img/catalog-flower-print-skirt-desktop@2x.jpg 2x" width="384" height="574" alt="White sundress">
+              </picture>
+              <svg class="catalog__icon catalog__icon--heart" width="37" height="32" role="img">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+            <div class="catalog__description">
+              <h3>Paradise utility skirt</h3>
+              <span class="catalog__item-price">USD $119.00</span>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__item-inner">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-pink-crop-top-mobile@1x.webp, img/catalog-pink-crop-top-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog-pink-crop-top-desktop@1x.webp, img/catalog-pink-crop-top-desktop@2x.webp 2x">
+
+                <!-- 1x: 451px 2x: 902px -->
+                <img src="img/catalog-pink-crop-top-desktop@1x.jpg" srcset="img/catalog-pink-crop-top-desktop@2x.jpg 2x" width="384" height="574" alt="White sundress">
+              </picture>
+              <svg class="catalog__icon catalog__icon--heart" width="37" height="32" role="img">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+            <div class="catalog__description">
+              <h3>Buffalo modal split top</h3>
+              <span class="catalog__item-price">USD $59.00</span>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__item-inner">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-plaid-sundress-mobile@1x.webp, img/catalog-plaid-sundress-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog-plaid-sundress-desktop@1x.webp, img/catalog-plaid-sundress-desktop@2x.webp 2x">
+
+                <!-- 1x: 451px 2x: 902px -->
+                <img src="img/catalog-plaid-sundress-desktop@1x.jpg" srcset="img/catalog-plaid-sundress-desktop@2x.jpg 2x" width="384" height="574" alt="White sundress">
+              </picture>
+              <svg class="catalog__icon catalog__icon--heart" width="37" height="32" role="img">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+            <div class="catalog__description">
+              <h3>Plaid sport dress</h3>
+              <span class="catalog__item-price">USD $189.00</span>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__item-inner">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-flared-jeans-mobile@1x.webp, img/catalog-flared-jeans-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog-flared-jeans-desktop@1x.webp, img/catalog-flared-jeans-desktop@2x.webp 2x">
+
+                <!-- 1x: 451px 2x: 902px -->
+                <img src="img/catalog-flared-jeans-desktop@1x.jpg" srcset="img/catalog-flared-jeans-desktop@2x.jpg 2x" width="384" height="574" alt="White sundress">
+              </picture>
+              <svg class="catalog__icon catalog__icon--heart" width="37" height="32" role="img">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+            <div class="catalog__description">
+              <h3>Legend high waist flared jeans</h3>
+              <span class="catalog__item-price">USD $229.00</span>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__item-inner">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-white-top-mobile@1x.webp, img/catalog-white-top-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog-white-top-desktop@1x.webp, img/catalog-white-top-desktop@2x.webp 2x">
+
+                <!-- 1x: 451px 2x: 902px -->
+                <img src="img/catalog-white-top-desktop@1x.jpg" srcset="img/catalog-white-top-desktop@2x.jpg 2x" width="384" height="574" alt="White sundress">
+              </picture>
+              <svg class="catalog__icon catalog__icon--heart" width="37" height="32" role="img">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+            <div class="catalog__description">
+              <h3>White rebel top</h3>
+              <span class="catalog__item-price">USD $139.00</span>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__item-inner">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-white-swimming-suit-mobile@1x.webp, img/catalog-white-swimming-suit-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog-white-swimming-suit-desktop@1x.webp, img/catalog-white-swimming-suit-desktop@2x.webp 2x">
+
+                <!-- 1x: 451px 2x: 902px -->
+                <img src="img/catalog-white-swimming-suit-desktop@1x.jpg" srcset="img/catalog-white-swimming-suit-desktop@2x.jpg 2x" width="384" height="574" alt="White sundress">
+              </picture>
+              <svg class="catalog__icon catalog__icon--heart" width="37" height="32" role="img">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+            <div class="catalog__description">
+              <h3>White sport fox bralette</h3>
+              <span class="catalog__item-price">USD $139.00</span>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__item-inner">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-white-shorts-mobile@1x.webp, img/catalog-white-shorts-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog-white-shorts-desktop@1x.webp, img/catalog-white-shorts-desktop@2x.webp 2x">
+
+                <!-- 1x: 451px 2x: 902px -->
+                <img src="img/catalog-white-shorts-desktop@1x.jpg" srcset="img/catalog-white-shorts-desktop@2x.jpg 2x" width="384" height="574" alt="White sundress">
+              </picture>
+              <svg class="catalog__icon catalog__icon--heart" width="37" height="32" role="img">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+            <div class="catalog__description">
+              <h3>White sport fox shorts</h3>
+              <span class="catalog__item-price">USD $129.00</span>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__item-inner">
+            <a class="catalog__link" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-jeans-shirt-mobile@1x.webp, img/catalog-jeans-shirt-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog-jeans-shirt-desktop@1x.webp, img/catalog-jeans-shirt-desktop@2x.webp 2x">
+
+                <!-- 1x: 451px 2x: 902px -->
+                <img src="img/catalog-jeans-shirt-desktop@1x.jpg" srcset="img/catalog-jeans-shirt-desktop@2x.jpg 2x" width="384" height="574" alt="White sundress">
+              </picture>
+              <svg class="catalog__icon catalog__icon--heart" width="37" height="32" role="img">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+            <div class="catalog__description">
+              <h3>Sunbleach blue saints shorts</h3>
+              <span class="catalog__item-price">USD $159.00</span>
+            </div>
+          </div>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__item-inner">
+            <a class="catalog__link" href="product.html">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/catalog-t-shirt-peace-mobile@1x.webp, img/catalog-t-shirt-peace-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/catalog-t-shirt-peace-desktop@1x.webp, img/catalog-t-shirt-peace-desktop@2x.webp 2x">
+
+                <!-- 1x: 451px 2x: 902px -->
+                <img src="img/catalog-t-shirt-peace-desktop@1x.jpg" srcset="img/catalog-t-shirt-peace-desktop@2x.jpg 2x" width="384" height="574" alt="White sundress">
+              </picture>
+              <svg class="catalog__icon catalog__icon--heart" width="37" height="32" role="img">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </a>
+            <div class="catalog__description">
+              <h3>Peace saints boyfriend T-Shirt</h3>
+              <span class="catalog__item-price">USD $79.00</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper container">
+
+      <div class="page-footer__subscribe subscribe">
+        <h2>Sign Up for updates</h2>
+        <p>Sign up for exclusive early sale access and tailored new arrivals.</p>
+        <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="input-subscribe">E-mail form</label>
+          <div class="subscribe__inner">
+            <input id="input-subscribe" type="email" name="subscribe-newsletter" placeholder="Your email address">
+            <button type="submit" aria-label="Open sign up window">Join</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="page-footer__nav">
+        <div class="page-footer__inner page-footer__inner--custom">
+          <h3>Custom Service</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Contact</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Delivery & Returns</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Payment</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Make a return</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__inner page-footer__inner--info">
+          <h3>Info</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Gift Vouchers</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Size Guide</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Careers at Mondikey</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">About Us</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#">Legal Policies</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__inner">
+          <h3>Follow Us</h3>
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#" aria-label="Redirect to a Facebook page">
+                <div class="page-footer__icon-wrapper">
+                  <svg class="page-footer__icon page-footer__icon--fb" width="18" height="18" role="img">
+                    <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                  <span class="page-footer__social-text">Facebook</span>
+                </div>
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#" aria-label="Redirect to a Instagram page">
+                <div class="page-footer__icon-wrapper">
+                  <svg class="page-footer__icon page-footer__icon--instagram" width="18" height="18" role="img">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                  <span class="page-footer__social-text">Instagram</span>
+                </div>
+              </a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__link" href="#" aria-label="Redirect to a Pinterest page">
+                <div class="page-footer__icon-wrapper">
+                  <svg class="page-footer__icon page-footer__icon--pinterest" width="18" height="18" role="img">
+                    <use xlink:href="img/sprite.svg#icon-pinterest"></use>
+                  </svg>
+                  <span class="page-footer__social-text">Pinterest</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__inner page-footer__inner--contact">
+          <h3>Contact Us</h3>
+          <a class="page-footer__link page-footer__link--email" href="mailto:hello@mondikey.com">hello@mondikey.com</a>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+</body>
+
+</html>
